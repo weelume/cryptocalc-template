@@ -1,0 +1,10 @@
+'use client'
+import {Shell,type PageContext} from '../components/Shell'
+import type {SiteTemplatePageProps} from '../../../types'
+import {Hero} from '../components/Hero'
+import {Rates} from '../components/Rates'
+import {Features} from '../components/Features'
+import {Market} from '../components/Market'
+import {Currencies} from '../components/Currencies'
+import {Faq} from '../components/Faq'
+export default function Page({locale='zh',basePath}:SiteTemplatePageProps){const context:PageContext={locale,basePath};return <Shell {...context}><Hero {...context}/><Rates {...context}/><Features {...context}/><Market {...context}/><Currencies {...context}/><Faq {...context}/></Shell>}

@@ -1,0 +1,265 @@
+{
+  "id": "cryptocalc",
+  "gitUrl": "https://github.com/weelume/cryptocalc-template",
+  "name": "CryptoCalc · 加密资产换算",
+  "localizedNames": {
+    "en": "CryptoCalc · Crypto Calculator"
+  },
+  "sceneId": "landing-page",
+  "listed": false,
+  "tags": [
+    "金融科技",
+    "轨道动效",
+    "数字资产",
+    "双语",
+    "PC / iPad / H5"
+  ],
+  "summary": "浅色橙色系加密资产计算器，包含币种环绕、双向行情滚动、动态图表、市场概览、币种筛选和双语知识指南。",
+  "accentColor": "#ee4901",
+  "format": "git-template",
+  "formatVersion": "0.2.0",
+  "version": "1.0.0",
+  "cover": "assets/desktop-home.webp",
+  "screenshots": [
+    {
+      "src": "assets/desktop-home.webp",
+      "alt": "CryptoCalc desktop home",
+      "device": "desktop",
+      "width": 1432,
+      "height": 994,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/desktop-features.webp",
+      "alt": "CryptoCalc desktop features",
+      "device": "desktop",
+      "width": 1432,
+      "height": 994,
+      "surfaceId": "site",
+      "pageSlug": "features"
+    },
+    {
+      "src": "assets/desktop-blog.webp",
+      "alt": "CryptoCalc desktop blog",
+      "device": "desktop",
+      "width": 1432,
+      "height": 994,
+      "surfaceId": "site",
+      "pageSlug": "blog"
+    },
+    {
+      "src": "assets/desktop-contact.webp",
+      "alt": "CryptoCalc desktop contact",
+      "device": "desktop",
+      "width": 1432,
+      "height": 994,
+      "surfaceId": "site",
+      "pageSlug": "contact"
+    },
+    {
+      "src": "assets/tablet-home.webp",
+      "alt": "CryptoCalc tablet home",
+      "device": "tablet",
+      "width": 826,
+      "height": 1169,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/tablet-features.webp",
+      "alt": "CryptoCalc tablet features",
+      "device": "tablet",
+      "width": 826,
+      "height": 1169,
+      "surfaceId": "site",
+      "pageSlug": "features"
+    },
+    {
+      "src": "assets/tablet-blog.webp",
+      "alt": "CryptoCalc tablet blog",
+      "device": "tablet",
+      "width": 826,
+      "height": 1169,
+      "surfaceId": "site",
+      "pageSlug": "blog"
+    },
+    {
+      "src": "assets/tablet-contact.webp",
+      "alt": "CryptoCalc tablet contact",
+      "device": "tablet",
+      "width": 826,
+      "height": 1169,
+      "surfaceId": "site",
+      "pageSlug": "contact"
+    },
+    {
+      "src": "assets/mobile-home.webp",
+      "alt": "CryptoCalc mobile home",
+      "device": "mobile",
+      "width": 382,
+      "height": 827,
+      "surfaceId": "site",
+      "pageSlug": ""
+    },
+    {
+      "src": "assets/mobile-features.webp",
+      "alt": "CryptoCalc mobile features",
+      "device": "mobile",
+      "width": 382,
+      "height": 827,
+      "surfaceId": "site",
+      "pageSlug": "features"
+    },
+    {
+      "src": "assets/mobile-blog.webp",
+      "alt": "CryptoCalc mobile blog",
+      "device": "mobile",
+      "width": 382,
+      "height": 827,
+      "surfaceId": "site",
+      "pageSlug": "blog"
+    },
+    {
+      "src": "assets/mobile-contact.webp",
+      "alt": "CryptoCalc mobile contact",
+      "device": "mobile",
+      "width": 382,
+      "height": 827,
+      "surfaceId": "site",
+      "pageSlug": "contact"
+    }
+  ],
+  "surfaces": [
+    {
+      "id": "site",
+      "name": "官网",
+      "platform": "pc",
+      "locales": [
+        "zh",
+        "en"
+      ],
+      "pages": [
+        {
+          "slug": "",
+          "title": "首页",
+          "localizedTitles": {
+            "en": "Home"
+          }
+        },
+        {
+          "slug": "features",
+          "title": "产品功能",
+          "localizedTitles": {
+            "en": "Features"
+          }
+        },
+        {
+          "slug": "market",
+          "title": "市场行情",
+          "localizedTitles": {
+            "en": "Market"
+          }
+        },
+        {
+          "slug": "currencies",
+          "title": "支持币种",
+          "localizedTitles": {
+            "en": "Currencies"
+          }
+        },
+        {
+          "slug": "faq",
+          "title": "常见问题",
+          "localizedTitles": {
+            "en": "FAQ"
+          }
+        },
+        {
+          "slug": "blog",
+          "title": "资讯与指南",
+          "localizedTitles": {
+            "en": "Resources"
+          }
+        },
+        {
+          "slug": "about",
+          "title": "关于我们",
+          "localizedTitles": {
+            "en": "About"
+          }
+        },
+        {
+          "slug": "contact",
+          "title": "联系我们",
+          "localizedTitles": {
+            "en": "Contact"
+          }
+        },
+        {
+          "slug": "privacy",
+          "title": "隐私政策",
+          "localizedTitles": {
+            "en": "Privacy Policy"
+          }
+        },
+        {
+          "slug": "terms",
+          "title": "服务条款",
+          "localizedTitles": {
+            "en": "Terms of Service"
+          }
+        },
+        {
+          "slug": "cookies",
+          "title": "Cookie 政策",
+          "localizedTitles": {
+            "en": "Cookie Policy"
+          }
+        },
+        {
+          "slug": "disclaimer",
+          "title": "免责声明",
+          "localizedTitles": {
+            "en": "Disclaimer"
+          }
+        },
+        {
+          "slug": "security",
+          "title": "安全说明",
+          "localizedTitles": {
+            "en": "Security Info"
+          }
+        },
+        {
+          "slug": "blog/understanding-conversions",
+          "title": "理解加密资产换算",
+          "localizedTitles": {
+            "en": "Understanding crypto conversions"
+          }
+        },
+        {
+          "slug": "blog/market-cap-and-volume",
+          "title": "市值与成交量",
+          "localizedTitles": {
+            "en": "Market cap and volume"
+          }
+        },
+        {
+          "slug": "blog/privacy-and-security",
+          "title": "安全使用换算工具",
+          "localizedTitles": {
+            "en": "Privacy and security"
+          }
+        }
+      ]
+    }
+  ],
+  "license": {
+    "type": "restricted",
+    "file": "docs/LICENSE.md",
+    "summary": "第三方参考设计许可未核实；禁止未经授权商业再分发。",
+    "redistributionAllowed": false
+  },
+  "$schema": "./schemas/template.schema.json"
+}

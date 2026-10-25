@@ -1,0 +1,5 @@
+'use client'
+import {Shell,type PageContext} from '../components/Shell'
+import type {SiteTemplatePageProps} from '../../../types'
+import {text} from '../content/data'
+export default function Page({locale='zh',basePath}:SiteTemplatePageProps){const context:PageContext={locale,basePath};return <Shell {...context}><article className="cc-inner-page"><span className="cc-eyebrow">CRYPTOCALC · 2026</span><h1>{text(locale,"服务条款","Terms of Service")}</h1><div className="cc-article-copy"><p>{text(locale,"本模板用于界面展示与开发参考。示例价格与统计不代表真实交易报价，使用者应自行核实第三方设计和素材的许可。","This template is for interface demonstration and development reference. Sample prices and statistics are not executable quotes. Users must verify permissions for third-party design and assets.")}</p><h2>{text(locale,'适用范围','Scope')}</h2><p>{text(locale,'此说明适用于独立模板演示。集成方应按实际服务能力、数据处理方式及适用法律另行制定正式条款。','This notice applies to the standalone template demo. Integrators should prepare their own formal policies based on actual services, data processing and applicable laws.')}</p></div></article></Shell>}

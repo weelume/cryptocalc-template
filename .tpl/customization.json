@@ -1,0 +1,39 @@
+{
+  "$schema": "./schemas/customization.schema.json",
+  "format": "git-template-customization",
+  "formatVersion": "0.2.0",
+  "entries": [
+    {
+      "id": "brand",
+      "title": "修改品牌与主题",
+      "description": "品牌、内容与主题分别维护，双语同步调整。",
+      "files": [
+        {
+          "path": "src/features/site-templates/catalog/cryptocalc/config/brand.ts",
+          "kind": "file",
+          "purpose": "品牌名称与标语"
+        },
+        {
+          "path": "src/features/site-templates/catalog/cryptocalc/content/data.ts",
+          "kind": "file",
+          "purpose": "双语文案和数据"
+        },
+        {
+          "path": "src/features/site-templates/catalog/cryptocalc/theme.css",
+          "kind": "file",
+          "purpose": "主题令牌和响应式样式"
+        }
+      ],
+      "constraints": [
+        "保留双语",
+        "运行素材必须本地托管",
+        "不连接真实金融服务"
+      ],
+      "checks": [
+        "typecheck",
+        "lint",
+        "build"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+'use client'
+import {Shell,type PageContext} from '../components/Shell'
+import type {SiteTemplatePageProps} from '../../../types'
+import {text} from '../content/data'
+export default function Page({locale='zh',basePath}:SiteTemplatePageProps){const context:PageContext={locale,basePath};return <Shell {...context}><article className="cc-inner-page"><span className="cc-eyebrow">CRYPTOCALC · 2026</span><h1>{text(locale,"Cookie 政策","Cookie Policy")}</h1><div className="cc-article-copy"><p>{text(locale,"本独立模板不设置营销、分析或身份验证 Cookie。用户界面状态仅在当前页面内存中保留。若集成方增加第三方服务，应更新其对应的 Cookie 说明。","This standalone template sets no marketing, analytics or authentication cookies. Interface state remains in current page memory. Integrators adding third-party services should update their cookie disclosures.")}</p><h2>{text(locale,'适用范围','Scope')}</h2><p>{text(locale,'此说明适用于独立模板演示。集成方应按实际服务能力、数据处理方式及适用法律另行制定正式条款。','This notice applies to the standalone template demo. Integrators should prepare their own formal policies based on actual services, data processing and applicable laws.')}</p></div></article></Shell>}

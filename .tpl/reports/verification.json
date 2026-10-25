@@ -1,0 +1,85 @@
+{
+  "$schema": "../schemas/verification.schema.json",
+  "format": "git-template-verification",
+  "formatVersion": "0.2.0",
+  "status": "passed",
+  "checkedAt": "2026-10-25T23:48:52.722Z",
+  "sourceCommit": null,
+  "sourceDigest": "c0660350239e878e003ec4b95808fa1ec792e7a861c4a26227a2f292db175c90",
+  "environment": {
+    "platform": "linux-wsl-local",
+    "arch": "x64",
+    "node": "v24.16.0",
+    "packageManager": "pnpm@9.15.4",
+    "cleanDirectory": true,
+    "localGitClone": false
+  },
+  "checks": [
+    {
+      "id": "typecheck",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "typecheck"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-25T23:47:16.398Z",
+      "finishedAt": "2026-10-25T23:47:16.827Z"
+    },
+    {
+      "id": "lint",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "lint"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-25T23:47:16.835Z",
+      "finishedAt": "2026-10-25T23:47:19.527Z"
+    },
+    {
+      "id": "test",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "test"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-25T23:47:19.532Z",
+      "finishedAt": "2026-10-25T23:47:20.353Z"
+    },
+    {
+      "id": "build",
+      "cwd": ".",
+      "argv": [
+        "pnpm",
+        "run",
+        "build"
+      ],
+      "status": "passed",
+      "exitCode": 0,
+      "startedAt": "2026-10-25T23:47:20.358Z",
+      "finishedAt": "2026-10-25T23:47:39.991Z"
+    }
+  ],
+  "services": [
+    {
+      "id": "web",
+      "status": "passed",
+      "stopped": true,
+      "checkedAt": "2026-10-25T23:47:40.993Z"
+    }
+  ],
+  "limitations": [
+    "三端逐项完整初始/运行/结束时序矩阵未全部完成，不声明完整逐帧复刻。",
+    "悬停暂停/恢复与系统减少动态设置只有源码检查，未完成真实触发；小图曲线为示意，部分排版按双语规范调整。",
+    "使用全新本地WSL复制目录安装和构建，不是独立Git克隆；服务验证结束后已停止。",
+    "公开参考设计商业再分发许可未核实，listed=false、redistributionAllowed=false。"
+  ]
+}
