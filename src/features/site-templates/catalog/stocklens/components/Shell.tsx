@@ -5,14 +5,14 @@ import {useEffect,useState,type ReactNode} from 'react'
 import {AnimatePresence,motion,useReducedMotion} from 'framer-motion'
 import {brand} from '../config/brand'
 import {text,type Locale} from '../content/data'
-import {useCryptoCalcHost} from '../host'
+import {useStockLensHost} from '../host'
 import {LocalForm} from './Primitives'
 import '../reference.css'
 import '../theme.css'
 export interface PageContext {locale:Locale;basePath:string}
 export function pageHref(basePath:string,slug=''){return (basePath||'')+(slug?'/'+slug:'/')}
 export function Shell({children,locale,basePath}:{children:ReactNode}&PageContext){
- const host=useCryptoCalcHost(),pathname=usePathname(),router=useRouter(),[menu,setMenu]=useState(false),[scrolled,setScrolled]=useState(false),[notice,setNotice]=useState(''),reduced=useReducedMotion()
+ const host=useStockLensHost(),pathname=usePathname(),router=useRouter(),[menu,setMenu]=useState(false),[scrolled,setScrolled]=useState(false),[notice,setNotice]=useState(''),reduced=useReducedMotion()
  useEffect(()=>{const update=()=>setScrolled(window.scrollY>20);update();window.addEventListener('scroll',update,{passive:true});return()=>window.removeEventListener('scroll',update)},[])
  const links=[['',text(locale,'持仓测算','Position Calculator')],['market',text(locale,'美股行情','US Markets')],['currencies',text(locale,'股票目录','Stock Explorer')],['blog',text(locale,'资源','Resources')]]
  const parts=pathname.split('/');if(locale==='en'){const index=parts.indexOf('en');if(index>=0)parts.splice(index,1)}else{const hostSiteIndex=parts.indexOf('site');parts.splice(hostSiteIndex>=0?hostSiteIndex+1:1,0,'en')}const languageHref=parts.join('/')||'/'

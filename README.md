@@ -6,7 +6,7 @@
 
 检查：pnpm typecheck、pnpm lint、pnpm test、pnpm build；pnpm bundle生成共享运行包。沿用React/Next.js/Framer Motion，不新增依赖。
 
-修改入口位于 src/features/site-templates/catalog/cryptocalc：config/brand.ts、content/data.ts、position.ts、theme.css、components/、pages/、meta.ts。兼容既有接入，模板ID、包名、导出与URL保持不变；用户展示品牌为StockLens。
+修改入口位于 src/features/site-templates/catalog/stocklens：config/brand.ts、content/data.ts、position.ts、theme.css、components/、pages/、meta.ts。模板ID为stocklens，包名为stocklens-template，业务与品牌均为StockLens。
 
 演示包含12只美股和5个行业，报价、指数与估值均为固定样例，未接入实时行情。持仓测算不包括佣金、税款、分红、拆股及汇率变化，不提供账户连接、交易或推荐。零成本或零持仓收益率显示无定义。表单只本地校验，不发送、不保存。
 

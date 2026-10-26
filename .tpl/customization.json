@@ -9,22 +9,22 @@
       "description": "品牌、股票示例、持仓计算与主题分别维护，中英文同步修改。",
       "files": [
         {
-          "path": "src/features/site-templates/catalog/cryptocalc/config/brand.ts",
+          "path": "src/features/site-templates/catalog/stocklens/config/brand.ts",
           "kind": "file",
           "purpose": "品牌名称与标语"
         },
         {
-          "path": "src/features/site-templates/catalog/cryptocalc/content/data.ts",
+          "path": "src/features/site-templates/catalog/stocklens/content/data.ts",
           "kind": "file",
           "purpose": "双语文案和数据"
         },
         {
-          "path": "src/features/site-templates/catalog/cryptocalc/theme.css",
+          "path": "src/features/site-templates/catalog/stocklens/theme.css",
           "kind": "file",
           "purpose": "主题令牌和响应式样式"
         },
         {
-          "path": "src/features/site-templates/catalog/cryptocalc/position.ts",
+          "path": "src/features/site-templates/catalog/stocklens/position.ts",
           "kind": "file",
           "purpose": "持仓市值、成本与盈亏规则"
         }

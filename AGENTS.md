@@ -1,4 +1,4 @@
-# CryptoCalc 协作规则
+# StockLens 协作规则
 
 首读 .tpl/README.md、.tpl/template.json、.tpl/project.json 和 .tpl/docs/ 下的架构、修改、验收与许可说明。
 

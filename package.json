@@ -1,7 +1,7 @@
 {
-  "name": "cryptocalc-template",
+  "name": "stocklens-template",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "type": "module",
   "packageManager": "pnpm@9.15.4",
   "scripts": {
@@ -30,8 +30,8 @@
     "react-dom": "19.2.5"
   },
   "exports": {
-    "./template": "./src/features/site-templates/catalog/cryptocalc/meta.ts",
-    "./host": "./src/features/site-templates/catalog/cryptocalc/host.tsx",
+    "./template": "./src/features/site-templates/catalog/stocklens/meta.ts",
+    "./host": "./src/features/site-templates/catalog/stocklens/host.tsx",
     "./package.json": "./package.json"
   },
   "files": [
@@ -39,7 +39,7 @@
     ".tpl/assets",
     ".tpl/template.json",
     ".tpl/docs/LICENSE.md",
-    "public/templates/cryptocalc"
+    "public/templates/stocklens"
   ],
   "peerDependencies": {
     "framer-motion": "^12.38.0",

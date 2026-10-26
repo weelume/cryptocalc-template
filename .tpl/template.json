@@ -1,6 +1,6 @@
 {
-  "id": "cryptocalc",
-  "gitUrl": "https://github.com/weelume/cryptocalc-template",
+  "id": "stocklens",
+  "gitUrl": "https://github.com/weelume/stocklens-template",
   "name": "StockLens · 美股分析",
   "localizedNames": {
     "en": "StockLens · US Stock Analysis"
@@ -19,7 +19,7 @@
   "accentColor": "#ee4901",
   "format": "git-template",
   "formatVersion": "0.2.0",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "cover": "assets/desktop-home.webp",
   "screenshots": [
     {
