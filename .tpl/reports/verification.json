@@ -3,7 +3,7 @@
   "format": "git-template-verification",
   "formatVersion": "0.2.0",
   "status": "passed",
-  "checkedAt": "2026-10-26T00:38:33.753Z",
+  "checkedAt": "2026-10-26T00:40:20.626Z",
   "sourceCommit": null,
   "sourceDigest": "428efc214dbbb67364bac849b720088abd044a3d41c9702d65caa30c2f943375",
   "environment": {
@@ -51,8 +51,8 @@
       ],
       "status": "passed",
       "exitCode": 0,
-      "startedAt": "2026-10-26T00:37:06.024Z",
-      "finishedAt": "2026-10-26T00:37:05.023Z"
+      "startedAt": "2026-10-26T00:39:53.308Z",
+      "finishedAt": "2026-10-26T00:39:54.184Z"
     },
     {
       "id": "build",
