@@ -1,5 +1,5 @@
-# CryptoCalc 模板使用规则
+# StockLens 模板使用规则
 
-本工程遵循 git-template 0.2.0，市场资料 template.json、运行合同 project.json、修改映射 customization.json。应用能力、工具链、安装、启动、停止及限制详见根 README.md。
+遵循git-template0.2.0。用户展示品牌为StockLens，兼容保留cryptocalc模板ID、包名和原页面URL。
 
-必须阅读 docs/ARCHITECTURE.md、docs/CUSTOMIZATION.md、docs/VERIFICATION.md、docs/MOTION.md、docs/LICENSE.md 和 docs/ASSETS.json。规则不授权自动安装、启动、上传或发布。
+阅读根README.md及 docs/ARCHITECTURE.md、CUSTOMIZATION.md、VERIFICATION.md、MOTION.md、LICENSE.md、ASSETS.json。project.json为运行合同，customization.json为修改入口映射。读取规则不授权安装、上传或发布。

@@ -1,9 +1,9 @@
 # 架构
 
-单一 Next.js 应用，无后端和数据库。src/app/[[...slug]]/page.tsx 解析语言和页面，从 src/features/site-templates/catalog/cryptocalc/meta.ts 注册表加载独立页面。页面组合共用 Shell 和业务组件。
+单一Next.js应用，无后端和数据库。src/app/[[...slug]]/page.tsx按语言与slug加载独立页面。模板模块位于src/features/site-templates/catalog/cryptocalc。
 
-config/brand.ts 管理品牌；content/data.ts 管理可编辑双语数据；conversion.ts 是纯换算规则；theme.css 管理主题、字体和响应式；reference.css 保留参考的区块样式及动效节奏。components/ 的 Calculator、Hero、Rates、Features、Market、Currencies、Faq 和 Primitives 按职责组织。
+config/brand.ts管理品牌；content/data.ts管理美股样例、双语FAQ与研究指南；position.ts负责纯持仓计算；theme.css管理主题与新测算器布局，reference.css保留既有区块动画。components/各自维护市场、股票筛选、行情滚动、持仓测算等职责；pages/只组合区块。
 
-host.tsx 提供通用品牌和页脚注入，不依赖具体消费方。共享包通过 /template 和 /host 导出；运行素材属于 public/templates/cryptocalc，展示图属于 .tpl/assets。
+所有示例股价统一美元计价。图标从同一股票数据集读取颜色与代码；未知代码显式报错，不静默显示其他图标。数量与成本仅保存在页面内存，页面刷新即重置。
 
-客户端本地状态只用于金额、币种、筛选、周期、FAQ 和表单提示。不访问外部服务、不存储业务数据。
+host.tsx为通用品牌/页脚注入；共享包继续通过/template和/host导出。运行素材在public/templates/cryptocalc；展示截图在.tpl/assets。模板ID、旧URL和导出名保留是兼容性设计，不代表仍提供原业务。

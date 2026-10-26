@@ -12,4 +12,4 @@ export async function generateMetadata({ params }: {
     params: Promise<{
         slug?: string[];
     }>;
-}) { const { slug = [] } = await params; const locale = slug[0] === 'en' ? 'en' : 'zh'; const path = (locale === 'en' ? slug.slice(1) : slug).join('/'); const page = cryptocalcTemplate.surfaces[0].pages.find(p => p.slug === path); return { title: (locale === 'en' ? page?.localizedTitles?.en : page?.title) + ' · CryptoCalc' }; }
+}) { const { slug = [] } = await params; const locale = slug[0] === 'en' ? 'en' : 'zh'; const path = (locale === 'en' ? slug.slice(1) : slug).join('/'); const page = cryptocalcTemplate.surfaces[0].pages.find(p => p.slug === path); return { title: (locale === 'en' ? page?.localizedTitles?.en : page?.title) + ' · StockLens' }; }

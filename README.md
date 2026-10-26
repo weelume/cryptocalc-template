@@ -1,15 +1,13 @@
-# CryptoCalc
+# StockLens 美股分析
 
-中英双语加密资产换算界面演示，包含计算器、市场概览、币种目录、功能、FAQ、博客与三篇指南、关于、联系和五类政策页面，共16个页面、32条语言路径。
+面向美股研究的中英双语界面演示，包含市场指数、股票目录、行业筛选、公司市值/市盈率、持仓盈亏测算、功能、FAQ、博客与三篇指南、关于、联系和政策页面。共16个页面、32条语言路径。
 
-首读 .tpl/README.md、.tpl/template.json、.tpl/project.json。运行素材全部在 public/templates/cryptocalc，展示截图在 .tpl/assets。
+首读 .tpl/README.md、.tpl/template.json、.tpl/project.json。Node24.16.0、pnpm9.15.4。pnpm install --frozen-lockfile；pnpm dev 默认 http://127.0.0.1:43560；生产 pnpm build 后 pnpm start。Ctrl+C停止当前服务。PORT/HOSTNAME可调整端口与地址。
 
-Node 24.16.0、pnpm 9.15.4，React / Next.js / Framer Motion。执行 pnpm install --frozen-lockfile；pnpm dev 默认 http://127.0.0.1:43560；生产 pnpm build 后 pnpm start。Ctrl+C 停止当前服务。英文 /en，中文 /。可通过 PORT 与 HOSTNAME 修改本机端口与绑定地址。
+检查：pnpm typecheck、pnpm lint、pnpm test、pnpm build；pnpm bundle生成共享运行包。沿用React/Next.js/Framer Motion，不新增依赖。
 
-pnpm typecheck、pnpm lint、pnpm test、pnpm build 用于检查；pnpm bundle 创建共享运行包。安装和构建缓存不属于交付源码。
+修改入口位于 src/features/site-templates/catalog/cryptocalc：config/brand.ts、content/data.ts、position.ts、theme.css、components/、pages/、meta.ts。兼容既有接入，模板ID、包名、导出与URL保持不变；用户展示品牌为StockLens。
 
-所有报价、评价、统计为固定演示内容；动画不是实时行情。表单只在浏览器校验，不发送、不保存。没有账户、钱包、支付、数据库或外部行情服务。
+演示包含12只美股和5个行业，报价、指数与估值均为固定样例，未接入实时行情。持仓测算不包括佣金、税款、分红、拆股及汇率变化，不提供账户连接、交易或推荐。零成本或零持仓收益率显示无定义。表单只本地校验，不发送、不保存。
 
-修改入口：src/features/site-templates/catalog/cryptocalc/config/brand.ts、content/data.ts、theme.css、components/、pages/ 和 meta.ts。详见 .tpl/docs/CUSTOMIZATION.md。
-
-设计参考：https://jiro.build/templates/fintech/crypto-exchange-calculator-landing-page-cryptocalc 。公开参考设计的商业再分发许可尚未核实，listed=false，详见 .tpl/docs/LICENSE.md。
+运行素材本地托管；股票图标为自绘代码标记，不使用第三方公司Logo。设计沿用既有橙色玻璃与轨道动效；商业再分发许可未核实，listed=false。详见 .tpl/docs/LICENSE.md。

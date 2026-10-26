@@ -6,7 +6,7 @@
     {
       "id": "brand",
       "title": "修改品牌与主题",
-      "description": "品牌、内容与主题分别维护，双语同步调整。",
+      "description": "品牌、股票示例、持仓计算与主题分别维护，中英文同步修改。",
       "files": [
         {
           "path": "src/features/site-templates/catalog/cryptocalc/config/brand.ts",
@@ -22,12 +22,17 @@
           "path": "src/features/site-templates/catalog/cryptocalc/theme.css",
           "kind": "file",
           "purpose": "主题令牌和响应式样式"
+        },
+        {
+          "path": "src/features/site-templates/catalog/cryptocalc/position.ts",
+          "kind": "file",
+          "purpose": "持仓市值、成本与盈亏规则"
         }
       ],
       "constraints": [
-        "保留双语",
-        "运行素材必须本地托管",
-        "不连接真实金融服务"
+        "保留双语和原有路由兼容",
+        "固定美元示例不可描述为实时行情",
+        "不连接真实证券账户或执行交易"
       ],
       "checks": [
         "typecheck",

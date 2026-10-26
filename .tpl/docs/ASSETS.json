@@ -1,6 +1,6 @@
 {
   "reference": "https://jiro.build/templates/fintech/crypto-exchange-calculator-landing-page-cryptocalc",
-  "notes": "公开预览仅用于视觉及动效对照；设计商业再分发许可未核实。字体沿用既有本地字体，保留许可。",
+  "notes": "1.1.0使用本地股票代码图标，历史币种/国旗图标未在页面使用；保留原设计来源与许可信息。",
   "icons": {
     "source": "https://github.com/atomiclabs/cryptocurrency-icons/tree/1a63530be6e374711a8554f31b17e4cb92c25fa5",
     "license": "CC0-1.0",
@@ -13,5 +13,9 @@
   "fonts": {
     "Poppins": "SIL OFL; Poppins-OFL.txt",
     "MiSans": "小米MiSans字体知识产权许可协议; misans/LICENSE-SOURCE.md"
+  },
+  "stockIcons": {
+    "source": "components/Primitives.tsx StockIcon",
+    "license": "本工程自绘文字标记，不使用公司商标Logo"
   }
 }
